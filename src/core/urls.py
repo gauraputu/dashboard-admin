@@ -1,11 +1,13 @@
 from django.urls import path
-from .views import login
+from .views import setting
 from django.contrib.auth.views import LoginView
 
 urlpatterns = [
     # path('activate-account/<uidb64>/<token>/', activation.activate_account, name='activate-account'),
 
     path('login/', LoginView.as_view(template_name='login.html'), name='login'),
+    path('setting/', setting.SettingView.as_view(), name='setting'),
+    path('setting/sidebar/list', setting.SidebarListView.as_view(), name='sidebar-list'),
     # path('logout/', views.logout_user, name='logout'),
     # path('forgot-password/', views.forgot_password.index, name='forgot-password'),
 
