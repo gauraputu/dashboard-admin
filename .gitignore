@@ -1,0 +1,14 @@
+# environment file
+.env
+
+# virtual environment
+.venv/
+
+# NPM
+node_modules/
+
+# SQLlite
+db.sqlite3
+
+# python cache
+__pycache__
