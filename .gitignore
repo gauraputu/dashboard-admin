@@ -12,3 +12,6 @@ db.sqlite3
 
 # python cache
 __pycache__
+
+# django compressor cache files
+src/static/CACHE/
